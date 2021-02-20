@@ -1,0 +1,47 @@
+body {
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    grid-auto-columns: 3fr;
+    gap: 10px;
+    grid-template-areas: 
+    "header header header"
+    "nav    main   main  "
+    "footer footer footer";
+}
+
+/*HEADER*/
+
+header {
+    grid-area: header;
+    background-color: blue;
+    display: grid;
+}
+
+.titulo img {
+    width: 20px;
+}
+
+#buscar img {
+    width: 20px;
+}
+
+/*NAV*/
+
+nav {
+    grid-area: nav;
+    background-color: lightblue;
+}
+
+/*MAIN*/
+
+main {
+    grid-area: main;
+    background-color: lightblue;
+}
+
+/*FOOTER*/
+
+footer {
+    grid-area: footer;
+    background-color: cornflowerblue;
+}
